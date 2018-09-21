@@ -56,15 +56,14 @@ If you use LVM please check this post: https://forums.opensuse.org/vbcms-comment
 
 You can see it all here: https://dl.dropbox.com/u/10573557/Gr...ect/rescue.jpg
 
-N.B: This method should also work from a live cd
+N.B: This method should also work from a DVD or the RescueCD and doesnt matter if version type is different.  You can use a Opensuse Leap disc to rescue a SLES install and vice versa.
 
-This should be the same Arch as the installation: ie; 32 bit or 64 bit..USE LIVE CD TO RESCUE
+The discs should be the same Architecture as the installation: ie; 32 bit or 64 bit..USE DVD OR RESCUE CD
 
 If you have a seperate /boot partition you will also need to mount that before you chroot.
 in this example /boot will be in /dev/sda2
 
-Code:
-mount /dev/sda2 /mnt/boot
+>mount /dev/sda2 /mnt/boot
 
 Continue as above with the mounting of /dev to /mnt/dev.
 
