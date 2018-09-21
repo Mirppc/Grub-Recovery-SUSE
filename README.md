@@ -62,5 +62,5 @@ caf4926. “Re-Install Grub2 from DVD Rescue.” OpenSUSE Forums RSS, OpenSUSE, 
 
 If you liked this please help me buy a cup of tea or some food via Librepay.
 
-<script src="https://liberapay.com/Mir/widgets/button.js"></script>
+
 <noscript><a href="https://liberapay.com/Mir/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
