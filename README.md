@@ -11,41 +11,53 @@ Once the DVD rescue gets to 'login', type: root
 from there I run fdisk -l to confirm my HD partitition order.
 
 My root partition is /dev/sda3 in this guide and is where /boot is.
+
 See below for more instuctions for a seperate /boot partition
+
 We need to mount root (for me that's sda3)
 
-Now mount / (sda3) with:
-Code:
-mount /dev/sda3 /mnt
-To mount the other devices
-Next do:
-Code:
-mount --bind /dev /mnt/dev
-Code:
-mount --bind /proc /mnt/proc
-Code:
-mount --bind /sys /mnt/sys
-Then chroot:
-Code:
-chroot /mnt
-Your prompt changes to: Rescue:/>
-Here type: 
-Code:
-mkinitrd
-Code:
-grub2-mkconfig -o /boot/grub2/grub.cfg
-Code:
-grub2-install /dev/sda
-You can see it all here: https://dl.dropbox.com/u/10573557/Gr...ect/rescue.jpg
+Now mount / (sda3) with
 
-'exit'
-# reboot
+> mount /dev/sda3 /mnt
+
+To mount the other devices next do
+
+>mount --bind /dev /mnt/dev
+
+>mount --bind /proc /mnt/proc
+
+>mount --bind /sys /mnt/sys
+
+Then chroot
+
+>chroot /mnt
+
+Your prompt changes to: Rescue:/>
+
+Here type: 
+
+>mkinitrd
+
+Then do
+
+>grub2-mkconfig -o /boot/grub2/grub.cfg
+
+>grub2-install /dev/sda
+
+Then to reboot you type exit and then reboot as follows.
+
+>exit
+
+># reboot
 
 This also allows one to have access to YAST hence the binding of sys and proc before chroot.
 
 If you use LVM please check this post: https://forums.opensuse.org/vbcms-comments/478290-article-re-install-grub2-dvd-rescue-3.html#post2519005
 
+You can see it all here: https://dl.dropbox.com/u/10573557/Gr...ect/rescue.jpg
+
 N.B: This method should also work from a live cd
+
 This should be the same Arch as the installation: ie; 32 bit or 64 bit..USE LIVE CD TO RESCUE
 
 If you have a seperate /boot partition you will also need to mount that before you chroot.
