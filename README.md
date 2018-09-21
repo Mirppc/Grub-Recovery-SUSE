@@ -3,9 +3,10 @@ A helpful guide on how to recover from a broken grub install and also how to rep
 
 Original article from caf4926 on the Opensuse forums.  This guide will teach you how to rescue your grub on SLE 12, Leap and Tumbleweed as well as get access to YAST to fix any broken runlevels and other modifications.  
 
-Boot the Rescue from the DVD. This should be the same Arch as the installation: ie; 32 bit or 64 bit...
+Boot the Rescue from the DVD or the RescueCD. This should be the same Arch as the installation: ie; 32 bit or 64 bit...
 Also includes the steps to get YAST working by mounting sys and proc before chroot.
 
+# Grub Recovery
 
 Once the DVD rescue gets to 'login', type: root
 from there I run fdisk -l to confirm my HD partitition order.
@@ -48,7 +49,7 @@ Then to reboot you type exit and then reboot as follows.
 
 >exit
 
-># reboot
+>reboot
 
 This also allows one to have access to YAST hence the binding of sys and proc before chroot.
 
@@ -59,6 +60,8 @@ You can see it all here: https://dl.dropbox.com/u/10573557/Gr...ect/rescue.jpg
 N.B: This method should also work from a DVD or the RescueCD and doesnt matter if version type is different.  You can use a Opensuse Leap disc to rescue a SLES install and vice versa.
 
 The discs should be the same Architecture as the installation: ie; 32 bit or 64 bit..USE DVD OR RESCUE CD
+
+# Seperate /boot partition instructions
 
 If you have a seperate /boot partition you will also need to mount that before you chroot.
 in this example /boot will be in /dev/sda2
