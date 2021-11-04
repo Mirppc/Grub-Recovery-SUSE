@@ -53,7 +53,8 @@ Then to reboot you type exit and then reboot as follows.
 
 This also allows one to have access to YAST hence the binding of sys and proc before chroot.
 
-If you use LVM please check this post: https://forums.opensuse.org/vbcms-comments/478290-article-re-install-grub2-dvd-rescue-3.html#post2519005
+If you use LVM please check this post: https://forums.opensuse.org/showthread.php/478290-article-re-install-grub2-dvd-rescue-3
+For Encrypted LVM and in check this forum guide out: https://forums.opensuse.org/showthread.php/536654-how-to-re-install-grub-chroot-for-encrypted-lvm
 
 You can see it all here: https://dl.dropbox.com/u/10573557/Gr...ect/rescue.jpg
 
@@ -73,6 +74,11 @@ Continue as above with the mounting of /dev to /mnt/dev.
 
 Sources: 
 caf4926. “Re-Install Grub2 from DVD Rescue.” OpenSUSE Forums RSS, OpenSUSE, 12 Sept. 2012, forums.opensuse.org/content.php/128-Re-install-Grub2-from-DVD-Rescue.
+
+“Reinstalling GRUB Bootloader from the Rescue System.” SUSE, SUSE , 30 Apr. 2021, https://www.suse.com/support/kb/doc/?id=000016528. Document ID:
+000019909
+
+
 
 If you liked this please help me buy a cup of tea or some food via Librepay or via Paypal.
 
