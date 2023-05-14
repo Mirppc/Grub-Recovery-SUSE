@@ -39,6 +39,10 @@ Here type:
 
 >mkinitrd
 
+Note Mkinitrd has now been depreciated so do the following command:
+
+>dracut -f
+
 Then do
 
 >grub2-mkconfig -o /boot/grub2/grub.cfg
