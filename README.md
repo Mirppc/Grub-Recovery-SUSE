@@ -20,6 +20,10 @@ We need to mount root (for me that's sda3)
 Now mount / (sda3) with
 
 > mount /dev/sda3 /mnt
+>
+For installations with an EFI partition we will mount that as well.  In this example i will use sda1
+
+> mount /dev/sda1 /mnt/boot/efi
 
 To mount the other devices next do
 
@@ -42,6 +46,10 @@ Here type:
 Note Mkinitrd has now been depreciated so do the following command:
 
 >dracut -f
+
+Another Note is that you might need to run a different command to rebuild everything.  This seemed needed with custom kernels.
+
+>dracut -f --regenerate-all
 
 Then do
 
