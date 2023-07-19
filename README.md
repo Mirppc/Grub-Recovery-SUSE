@@ -53,7 +53,9 @@ Another Note is that you might need to run a different command to rebuild everyt
 
 Then do
 
->grub2-mkconfig -o /boot/grub2/grub.cfg
+>Traditional Setup:   grub2-mkconfig -o /boot/grub2/grub.cfg
+
+>EFI Setup:    grub2-mkconfig -o /boot/efi/EFI/opensuse/grub.cfg
 
 >grub2-install /dev/sda
 
