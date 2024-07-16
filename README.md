@@ -20,7 +20,9 @@ We need to mount root (for me that's sda3)
 Now mount / (sda3) with
 
 > mount /dev/sda3 /mnt
+
 You might need to add the following if there is a BTRFS filesystem with subvolumes
+
 > mount /dev/sda3 /mnt -o subvol=@
 
 For installations with an EFI partition we will mount that as well.  In this example i will use sda1
