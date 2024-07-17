@@ -36,6 +36,11 @@ To mount the other devices next do
 >mount --bind /proc /mnt/proc
 
 >mount --bind /sys /mnt/sys
+>
+
+For EFI you need to rbind
+
+>mount --rbind /sys /mnt/sys
 
 Then chroot
 
