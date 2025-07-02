@@ -94,14 +94,23 @@ in this example /boot will be in /dev/sda2
 
 Continue as above with the mounting of /dev to /mnt/dev.
 
+# Editing Grub Command Line Manualy
 
-Sources: 
+This is here for when YAST gets deprecated and users are required to manualy edit grub.  Systemd-boot equivelent will be added in the future.
+
+>sudo nano /etc/default/grub
+
+Then rebuild the initramfs and follow the grub setup like stated earlier.
+
+
+##### Sources: 
 caf4926. “Re-Install Grub2 from DVD Rescue.” OpenSUSE Forums RSS, OpenSUSE, 12 Sept. 2012, forums.opensuse.org/content.php/128-Re-install-Grub2-from-DVD-Rescue.
 
 “Reinstalling GRUB Bootloader from the Rescue System.” SUSE, SUSE , 30 Apr. 2021, https://www.suse.com/support/kb/doc/?id=000016528. Document ID:
 000019909
 
 
+# Support Me
 
 If you liked this please help me buy a cup of tea or some food via Librepay or via Paypal.
 
